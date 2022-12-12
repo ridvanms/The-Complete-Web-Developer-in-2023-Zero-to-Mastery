@@ -1,0 +1,19 @@
+h2{
+    color: aqua;
+    text-align: center;
+    border:5px solid rgba(255,176,170,0.5);
+    cursor: pointer;
+}
+p{
+    color: rgb(4, 75, 86);
+    
+}
+h2 + p{
+    font-family: 'La Belle Aurore', cursive;
+    line-height: 24px;
+    font-size: 20px;
+}
+li{
+    list-style: none;
+    display:inline-block
+}
