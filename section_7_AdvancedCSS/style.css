@@ -1,0 +1,24 @@
+body{
+    margin: 0px;
+}
+h1{
+    font-size: 2em;
+    border-bottom:5px solid rgba(50, 50, 240, 0.4);
+    border-right:5px solid rgba(50, 50, 240, 0.4);
+    border-radius: 20px;   
+    width:250px;
+    text-align: center;
+}
+div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+img{
+    height: 200px;
+    margin: 10px;
+    transition: all 1s;
+}
+img:hover{
+    transform: scale(1.1);
+}
