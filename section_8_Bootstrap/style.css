@@ -3,4 +3,42 @@ html {
   width: 100%;
   height: 100%;
   font-family: 'Montserrat', sans-serif;
+    background: url(header.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+}
+h1{
+    font-size: 3rem;
+    color: rgb(150, 187, 220);
+    padding-top: 2em;
+    
+}
+.btn-xl{
+    padding:1em 2em
+    
+}
+.btn-primary {
+    background-color: #F05F44;
+    border-color: #F05F44;
+    --bs-btn-hover-bg: #ee4b08;
+    --bs-btn-hover-border-color: #ee4b08;
+    border-radius: 60%;
+    text-transform: uppercase;
+}
+hr{
+    border: 2px solid red;
+
+    margin: auto;
+    opacity: 1;
+    max-width: 65px;
+    width: 4;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+.buffer{
+    height: 10rem;
 }
