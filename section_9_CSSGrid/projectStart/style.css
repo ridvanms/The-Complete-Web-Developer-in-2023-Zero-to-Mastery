@@ -1,6 +1,6 @@
 body {
   margin: auto 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .zone {
   /* padding:30px 50px;
@@ -179,9 +179,6 @@ a {
   text-decoration: none;
   color: #52084d;
 }
-.logo {
-  margin-right: auto;
-}
 
 /* COVER */
 
@@ -217,4 +214,13 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
+}
+.logoList {
+  margin-right: auto;
+  margin: auto auto 0 0;
+}
+.logoImg {
+  width: 1.5em;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
