@@ -2,3 +2,14 @@
   color: rgb(17, 137, 206);
   font-size: 1.1em;
 }
+.done {
+  text-decoration-line: line-through;
+  text-decoration-color: black;
+}
+.listButton {
+  font-size: 0.5em;
+  border-radius: 20%;
+  border: rgba(0, 20, 20, 0.3);
+
+  margin-left: 10px;
+}

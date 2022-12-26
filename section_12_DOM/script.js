@@ -27,3 +27,52 @@ function changeColor() {
 setInterval(changeColor, seconds * 1000);
 
 console.log(document);
+
+let button = document.getElementById("enter");
+let input = document.getElementById("userInput");
+let ul = document.querySelector("ul");
+
+function inputLength() {
+  return input.value.length;
+}
+function createListElement() {
+  let li = document.createElement("li");
+  li.appendChild(document.createTextNode(input.value));
+  ul.appendChild(li);
+  input.value = "";
+}
+
+button.addEventListener("click", () => {
+  if (inputLength() > 0) {
+    createListElement();
+  }
+});
+input.addEventListener("keypress", (e) => {
+  console.log(e);
+  if (inputLength() > 0 && e.keyCode === 13) {
+    createListElement();
+  }
+});
+let lists = document.querySelectorAll("li");
+
+lists.forEach((li) =>
+  li.addEventListener("click", function () {
+    li.classList.toggle("done");
+    console.log(li);
+  })
+);
+lists.forEach((li) => {
+  li.addEventListener("click", () => {
+    if (!li.children[0]) {
+      li.appendChild(document.createElement("button"));
+
+      let listButton = li.children[0];
+      listButton.classList.toggle("listButton");
+      listButton.appendChild(document.createTextNode("❌"));
+
+      listButton.addEventListener("click", function () {
+        ul.removeChild(li);
+      });
+    } else li.removeChild(li.children[0]);
+  });
+});
