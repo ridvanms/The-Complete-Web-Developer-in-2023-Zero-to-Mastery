@@ -46,13 +46,13 @@ let andrei_pokemon = {
 //   console.log("walk away...");
 // }
 let checking =
-  andrei_pokemon?.raichu && will_pokemon?.pikachu?.friend?.charizard
+  andrei_pokemon?.raichu && will_pokemon?.pikachu?.friend?.charizard // optional chaning operator ?.📝
     ? "fight!"
     : "walk away...";
 console.log(checking);
 
 // Exercise 4: What do these each output?
-console.log(false ?? "hellooo1"); // flase
+console.log(false ?? "hellooo1"); // flase               // nulish operator ?? 📝
 console.log(null ?? "hellooo2"); // hellpoo
 console.log(null || "hellooo3"); // hellooo
 console.log((false || null) ?? "hellooo4"); // hellooo4
