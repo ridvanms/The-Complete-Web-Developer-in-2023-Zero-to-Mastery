@@ -1,5 +1,7 @@
 Steps:.....
 
-git install -g live-server
+npm install -g live-server
 
-git install lodash // in this folder
+npm install lodash // in this folder
+
+npm install -g browserify // browserify script.js > bundle.js
