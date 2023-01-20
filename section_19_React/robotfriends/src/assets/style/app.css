@@ -5,8 +5,9 @@
 }
 h1{
     font-family: myFirstFont;
-    color: green;
+    color: rgb(13, 14, 13);
 }
 body{
-  background-color: rgba(20, 50, 24, 0.5);
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,75,1) 32%, rgba(0,212,255,1) 100%);
 }
