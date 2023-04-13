@@ -9,7 +9,6 @@ const image = require("./controls/image");
 
 const app = express();
 
-<<<<<<< HEAD
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
@@ -49,27 +48,7 @@ app.get("/profile/:id", (req, res) => {
   profile.profileHandler(req, res, db);
 });
 app.put("/image", (req, res) => {
-  image.imageHandler(req, res,db);
+  image.imageHandler(req, res, db);
 });
-=======
-// app.use((req, res, next) => {
-//   console.log("New one");
-//   next();
-// });
 
-// app.use(express.urlencoded({ extended: false }));
-// app.use(express.json());
-
-// app.get("/", (req, res) => {
-//   const user = {
-//     name: "Sally",
-//     hobby: "dancing",
-//   };
-//   res.send(user);
-// });
-///////////////////////////////////////////////////!SECTION
-
-app.use(express.static(__dirname));
-
->>>>>>> 8a2147d1e53d731caa7ec995f1e37ffffe0ddb6f
 app.listen(3000);
