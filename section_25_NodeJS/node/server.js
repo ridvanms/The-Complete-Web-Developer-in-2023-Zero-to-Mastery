@@ -26,6 +26,7 @@ const db = knex({
     password: "123",
     database: "smart_brain",
   },
+  searchPath: ["knex", "public"],
 });
 
 // db.select("*").from("users").then(console.log);
@@ -50,5 +51,5 @@ app.get("/profile/:id", (req, res) => {
 app.put("/image", (req, res) => {
   image.imageHandler(req, res, db);
 });
-console.log();
+console.log(process.env.PORT);
 app.listen(process.env.PORT || 3000);
