@@ -31,11 +31,7 @@ const db = knex({
 // db.select("*").from("users").then(console.log);
 
 app.get("/", (req, res) => {
-  const user = {
-    name: "Sally",
-    hobby: "dancing",
-  };
-  res.send(user);
+  res.status(200).json("it's working fine");
 });
 
 app.post("/register", (req, res) => {
@@ -51,4 +47,4 @@ app.put("/image", (req, res) => {
   image.imageHandler(req, res, db);
 });
 
-app.listen(3000);
+app.listen(process.env.PORT);
