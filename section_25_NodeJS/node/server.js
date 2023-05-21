@@ -1,6 +1,7 @@
 const express = require("express");
 const bcrypt = require("bcrypt");
 const knex = require("knex");
+const cors = require("cors");
 
 const register = require("./controls/register");
 const signin = require("./controls/signin");
@@ -8,6 +9,8 @@ const profile = require("./controls/profile");
 const image = require("./controls/image");
 
 const app = express();
+
+app.use(cors());
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
